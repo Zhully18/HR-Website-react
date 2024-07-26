@@ -1,0 +1,40 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background: #000;
+    color: #fff;
+}
+.nav-logo h2{
+    font-size: 1.5rem;
+}
+.links ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-left: -150px;
+    position: absolute;
+    z-index: 1;
+}
+.links ul li{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+.links ul li:hover{
+    color: #ff5f1f;
+    cursor: pointer;
+}
+.nav_btn button{
+    margin-top: 20px;
+    padding: 1rem 3rem;
+    border: none;
+    background: #ff5f1f;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+}
+.nav_btn button:hover{
+    color: #000;
+}
