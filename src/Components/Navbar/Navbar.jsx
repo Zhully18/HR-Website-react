@@ -17,7 +17,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="nav_btn">
-                <a href="#contact"><button>Hire Me</button></a>
+                <a href="#contact"><button>Contact Us</button></a>
             </div>
         </div>
     </div>

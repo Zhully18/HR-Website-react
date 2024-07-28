@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.css'
 import img from '../../assets/about.jpg'
-import { IoCheckmarkCircle } from 'react-icons/io5'
+import { about_list } from '../data'
 
 const About = () => {
   return (
@@ -12,37 +12,21 @@ const About = () => {
           </div>
           <div className="right_about">
             <h2 className='right_header'> About Us</h2>
-            <p>At [Company Name], we are dedicated to transforming businesses through 
+            <p>At SeamFull HR, we are dedicated to transforming businesses through 
                 innovative human resource solutions. With years of experience and a team of
                  seasoned HR professionals, we help organizations of all sizes manage their workforce
                   efficiently and effectively. Our mission is to empower your employees and optimize your 
                   HR processes, driving your business towards greater success.</p>
-            <div className="list_container">
-                <div className="list">
-                    <IoCheckmarkCircle className='icon'/>
-                    <p>Onboarding and confirmation</p>
-                </div>
-                <div className="list">
-                    <IoCheckmarkCircle className='icon'/>
-                    <p>Payroll management</p>
-                </div>
-                <div className="list">
-                    <IoCheckmarkCircle className='icon'/>
-                    <p>Payroll management</p>
-                </div>
-                <div className="list">
-                    <IoCheckmarkCircle className='icon'/>
-                    <p>Payroll management</p>
-                </div>
-                <div className="list">
-                    <IoCheckmarkCircle className='icon'/>
-                    <p>Payroll management</p>
-                </div>
-                <div className="list">
-                    <IoCheckmarkCircle className='icon'/>
-                    <p>Payroll management</p>
-                </div>
-            </div>
+            {about_list.map(({icon, title}) => {
+                return (
+                    <div className="list_container">
+                        <div className="list">
+                            <h2 className="icon">{icon} </h2>
+                            <p>{title} </p>
+                        </div>
+                    </div>
+                )
+            })}
           </div>
         </div>
     </div>

@@ -1,0 +1,99 @@
+.feedback{
+    padding: 5px 80px;
+    height: 55vh;
+    background-color: #000;
+    color: #fff;
+}
+.feedback h5{
+    text-align: center;
+    margin-top: 20px;
+}
+.feedback h5{
+    font-size: 20px;
+}
+.feedback h3{
+    font-size: 35px;
+    margin-top: 15px;
+}
+.feedback .customers{
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+}
+
+.feedback .customers .item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid #666;
+    border-radius: 10px;
+    padding: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.feedback .customers .item:nth-child(2){
+    background-color: #fff;
+    color: #000;
+}
+
+.feedback .customers .item p{
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.feedback .customers .item .user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feedback .customers .item .user img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.feedback .customers .item .user h5{
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.feedback .customers .item .user p{
+    font-size: 12px;
+}
+.feedback .customers .comment h2{
+    color: #ff5f1f;
+}
+
+@media screen and (max-width: 480px){
+    .feedback{
+        margin-top: 20px;
+        padding: 5px 35px;
+    }
+    .feedback h5,
+    .feedback h3{
+    text-align: left;
+    }
+    .feedback h5{
+        font-size: 16px;
+    }
+    .feedback h3{
+        font-size: 18px;
+        color: #666;
+    }
+    .feedback .customers{
+        overflow: scroll;
+    }
+    .feedback .customers .item{
+        padding: 10px;
+    }
+    .feedback .customers .item p{
+        font-size: 12px;
+        margin-top: -10px;
+    }
+    .feedback .customers .comment h2{
+        font-size: 12px;
+    }
+}

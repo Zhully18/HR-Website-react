@@ -1,0 +1,64 @@
+.team {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.team h2 {
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+.team h2 span{
+    color: #ff5f1f;
+}
+
+.team p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+
+.team-member {
+  margin: 1rem;
+  background: white;
+  border-radius: 10px;
+  /* overflow: hidden; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  text-align: left;
+  max-width: 200px;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+}
+
+.team-member h3 {
+  font-size: 1.3rem;
+  margin: 0.5rem;
+  /* margin-top: -2rem; */
+}
+
+.team-member p {
+  font-size: 0.9rem;
+  margin: 0.5rem;
+  /* margin-top: -3rem; */
+  color: #777;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 480px){
+  .team-members {
+    overflow: scroll;
+  }
+}
