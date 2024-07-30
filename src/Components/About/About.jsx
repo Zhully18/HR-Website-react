@@ -6,7 +6,7 @@ import { about_list } from '../data'
 const About = () => {
   return (
     <div>
-        <div className="about">
+        <div className="about" id='about'>
           <div className="left_about">
               <img src={img} alt="about_img" />
           </div>

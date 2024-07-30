@@ -73,15 +73,13 @@
         flex-direction: column;
     }
     .hero .hero_header{
-        font-size: 18px;
+        font-size: 20px;
         text-align: center;
-        margin-top: 5px;
-        color: #151B54;
+        margin-top: 22px;
     }
     .hero p{
         font-size: 14px;
         text-align: center;
-        /* margin-top: 10px; */
         color: #666;
     }
     .hero .btns{
@@ -98,5 +96,15 @@
         height: 200px;
         border-radius: 20px;
         place-content: center;
+    }
+    .icons .three{
+        margin-left: 20rem;
+        margin-top: 170px;
+        font-size: 26px;
+    }
+    .icons .two{
+        margin-left: 6px;
+        margin-top: 65px;
+        font-size: 26px;
     }
 }

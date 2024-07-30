@@ -38,5 +38,22 @@
 }
 
 @media screen and (max-width: 480px){
-    
+    .about{
+        margin-top: 110rem;
+        padding-inline: 50px;
+        display: grid;
+        place-items: center;
+    }
+    .right_about{
+        margin-top: -55px;
+    }
+    .about .left_about img{
+        display: none;
+    }
+    .right_header{
+        font-size: 2rem;
+    }
+    .right_about p{
+        font-size: 16px;
+    }
 }

@@ -84,3 +84,12 @@
     font-size: 17px;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 480px){
+    .services {
+        height: 150vh;
+    }
+    .service_container{
+        grid-template-columns: 1fr;
+    }
+}

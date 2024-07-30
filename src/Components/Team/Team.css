@@ -58,7 +58,17 @@
 }
 
 @media screen and (max-width: 480px){
-  .team-members {
+  .team{
+    margin-top: 1rem;
+  }
+  /* .team-members {
     overflow: scroll;
   }
+  .team-member{
+    max-width: 500px;
+  } */
+   .team-members{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   }
 }
